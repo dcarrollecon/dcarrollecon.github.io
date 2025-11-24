@@ -1,0 +1,406 @@
+\documentclass[oneside,11pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{graphicx}%
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+% \usepackage[utf8]{inputenc}
+% \usepackage[spanish]{babel}
+
+\usepackage{cmbright}
+
+\usepackage{supertabular}
+\usepackage[nohead]{geometry}
+\usepackage{longtable, lscape}
+\usepackage{color}
+\usepackage[pdfborder={0 0 0}, citecolor=black, colorlinks=true, colorlinks = true,
+            linkcolor = DarkBlue,
+            urlcolor  = black,
+            citecolor = DarkBlue,
+            anchorcolor = DarkBlue]{hyperref}
+
+
+\definecolor{DarkBlue}{rgb}{0.00,0.08,0.6}%{0.004,0.1216,0.3569}
+\definecolor{lgray}{gray}{0.5}
+
+%\ExecuteOptions{dvips}
+
+%\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%
+
+%\topmargin=0pt \textheight=23.5cm \textwidth=16cm \headsep=.75cm
+%\oddsidemargin=0cm \evensidemargin=0cm \flushbottom
+
+\makeatother \geometry{left=1in,right=1in,top=1.0in,bottom=1.0in}
+
+%\topmargin=0pt \textheight=23.5cm \textwidth=16cm \headsep=.75cm
+%\oddsidemargin=0cm \evensidemargin=0cm \flushbottom
+
+%--------------------------------------------------------------------
+%\documentclass{amsart}
+%\usepackage{graphicx}
+%\usepackage{mathrsfs}
+%\fontsize=12pt
+
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+% MATH -----------------------------------------------------------
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\DOT}{$\hskip.1cm {\footnotesize \cdot}\hskip.2cm$}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\mathbf{B}(X)}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
+\newcommand\textalign[2][]{%
+\ifx#1l\relax
+  \makebox[0pt][l]{#2}%
+\else
+  \ifx#1r\relax
+    \makebox[0pt][r]{#2}%
+  \else
+    \ifx#1c\relax
+      \makebox[0pt][c]{#2}%
+    \fi\fi\fi
+}
+\renewcommand\headrulewidth{0pt}
+% ----------------------------------------------------------------
+\begin{document}
+
+
+
+
+\vspace{-0.25cm}
+
+\noindent \center{\textbf{\huge{Daniel Carroll}} }
+
+{\footnotesize
+%\changeurlcolor{lgray}\href{http://www.clevelandfed.org/research/economists/carroll}{danielcarroll.com} {\color{lgray} \DOT}
+%\changeurlcolor{lgray}\href{mailto:daniel.carroll@clev.frb.org}{contact} {\color{lgray} \DOT}
+%\changeurlcolor{lgray}\href{tel:12165792417}{phone} {\color{lgray} \DOT}
+{\color{lgray}{\footnotesize May 2024}}
+}
+
+{\small
+
+\thispagestyle{empty}
+
+\vspace*{0.25cm}
+
+\begin{tabbing}
+\hspace{0.5cm} \= \hspace{0.55\linewidth} \=
+\hspace{0.45\linewidth} \kill
+%
+%
+%
+\Large{\textbf{Positions}} \> \> \\[0.2cm]
+\> Federal Reserve Bank of Cleveland  \> \\
+\> \hskip0.5cm Senior Research Economist {\color{lgray} \DOT {\footnotesize Jan 2020--Present}} \>  \\
+\> \hskip0.5cm Research Economist   {\color{lgray} \DOT {\footnotesize  Aug 2009--Dec 2020}} \>    \\[0.2cm]
+%
+%
+%
+\Large{\textbf{Education}} \> \> \\[0.2cm]
+\> University of Virginia \>  Whitman College  \\
+\> \hskip0.5cm  PhD in Economics {\color{lgray} \DOT {\footnotesize May 2009}} \>  \hskip0.5cm   BA in Economics {\color{lgray} \DOT {\footnotesize May 2004}} \\
+\> \> \hskip0.5cm  BA in Spanish {\color{lgray} \DOT {\footnotesize May 2001}}    \\[0.2cm]
+%
+%
+%
+\Large{\textbf{Working Papers}} \> \> \`  \\[0.2cm]
+%
+\> \hskip-.4cm \DOT Unequal Climate Policy in an Unequal World  \>    \`   \\
+\> \hskip0.5cm {\small with Elisa Belfiori and Sewon Hur} \> \\
+%
+\> \hskip-.4cm \DOT Optimal Fiscal Reform with Many Taxes  \>    \`   \\
+\> \hskip0.5cm {\small with Andre Victor D. Luduvicé and Eric R. Young} \> \\
+% 
+\> \hskip-.4cm \DOT The Dynamics of the Racial Wealth Gap  \>    \`   \\
+\> \hskip0.5cm {\small with Dionissi Aliprantis and Eric R. Young} \> 
+\\
+
+%
+\> \hskip-.4cm \DOT Mobility \> \`  \\
+\>  \hskip0.5cm {\small with Nicholas C. Hoffman and Eric R. Young}  \> \\
+
+%
+\> \hskip-.4cm \DOT The Nonequivalence of College Equivalents \> \`  \\
+\>  \hskip0.5cm {\small with Dionissi Aliprantis and C. Lockwood Reynolds}  \> \\
+
+%
+\> \hskip-.4cm \DOT Do People Vote Their Economic Interest? \> \`  \\
+\>  \hskip0.5cm {\small with Andre Victor D. Luduvicé and Eric R. Young}  \> \\
+%
+%
+%
+%\> \hskip-.4cm \DOT \textit{Making Our Neighborhoods, Making Our Selves}: A Review Essay \> \\
+%\> \hskip0.5cm  {\small {\color{lgray} Under Preparation for \textit{Journal of Economic Literature}}}   \\[0.0cm] %[0.5cm]
+%
+%\> \hskip-.4cm \DOT Differences of Opinion \> \\[0.0cm] %,  \textit{FRB-CLE WP 13-10R} \>\\
+%\> \hskip0.5cm  {\small {\color{lgray} R\&R at \textit{Theory and Decision}}}   \\[0.5cm]
+%
+%
+%
+ \Large{\textbf{Publications}} \> \> \`  \\[0.2cm]
+ 
+ \> \hskip-.4cm \DOT On the Distributional Effects of International Tariffs  \> \`  \\
+ %
+ \> \hskip0.5cm  {\color{lgray}  {\small \textit{International Economic Review \DOT 2023}}}  \DOT {\small with Sewon Hur} \>   \` \\
+
+%
+ \> \hskip-.4cm \DOT What Explains Neighborhood Sorting by Income and Race?  \> \`  \\
+ %
+ \> \hskip0.5cm  {\color{lgray}  {\small \textit{Journal of Urban Economics \DOT 2022}}}  \DOT {\small with Dionissi Aliprantis and Eric R. Young} \>   \` \\
+ %
+ \> \hskip-.4cm \DOT The Politics of Flat Taxes \> \\
+\> \hskip0.5cm  {\color{lgray}  {\small \textit{Review of Economics Dynamics \DOT 2021}}}  \DOT {\small with Jim Dolmas and Eric R. Young} \>   \` \\
+\> \hskip-.4cm \DOT On the Heterogeneous Welfare Gains and Losses from Trade \>   \\
+\>  \hskip0.5cm {\color{lgray} {\small \textit{Journal of Monetary Economics \DOT 2020}}}  \DOT {\small with Sewon Hur}  \>   \` \\
+%
+\> \hskip-.4cm \DOT Neighborhood Dynamics and the Distribution of Opportunity  \>   \`   \\
+\>  \hskip0.5cm  {\color{lgray} {\small \textit{Quantitative Economics \DOT 2018}}} \DOT {\small with Dionissi Aliprantis}   \\[0.0cm]
+%
+ \> \hskip-.4cm  \DOT Neoclassical Inequality \> \\
+ \>  \hskip0.5cm {\color{lgray}{\small \textit{Journal of Macroeconomics \DOT 2018}}} \DOT {\small with Eric R. Young}   \\[0.0cm]
+%
+\> \hskip-.4cm \DOT The Long Run Effects of Changes in Tax Progressivity \>  \\
+ \>   \hskip0.5cm  {\color{lgray} {\small \textit{Journal of Economic Dynamics and Control\DOT 2011}}}\DOT {\small with Eric R. Young}   \\[0.0cm]
+%
+\> \hskip-.4cm \DOT The Stationary Wealth Distribution under Progressive Taxation \> \\
+ \>   \hskip0.5cm  {\color{lgray} {\small \textit{Review of Economic Dynamics \DOT 2009}}}\DOT {\small with Eric R. Young}   \\[0.0cm]
+\> \\[0.2cm]
+%
+%
+% \Large{\textbf{Resting Papers}} \> \> \`  \\[0.25cm]
+%\> \hskip-.4cm \DOT \href{http://www.dionissialiprantis.com/pdfs/MTO_kids.pdf}{Evidence on the Production of Cognitive Achievement from Moving to Opportunity} \> \\[0.0cm]
+%%
+%\> \hskip-.4cm \DOT \href{http://www.dionissialiprantis.com/pdfs/the_problem_of_context_JCI1.pdf}{Covariates and Causal Effects:  The Problem of Context} \> \\[0.75cm]
+%
+%
+%
+\Large{\textbf{Federal Reserve Publications}} \> \>  \\[0.2cm]
+%
+\> \hskip-.4cm  \DOT  An Update on Wealth Mobility \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2022 }} \> \`  \small{with Ross Cohen-Kristiansen}   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT Evaluating Homeownership as the Solution to Wealth Inequality \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2021 }} \> \`  \small{with Ross Cohen-Kristiansen}   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT Why are Headline PCE and Median PCE Inflations so Far Apart? \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2020 }} \> \`  \small{with Ross Cohen-Kristiansen}   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT The Winners and Losers from Trade? \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2019 }} \> \`  \small{with Sewon Hur}   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT Behavior of a New Median PCE Measure: A Tale of Two Tails \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2019 }} \> \`  \small{with Randy Verbrugge}   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT What Is Behind the Persistence of the Racial Wealth Gap? \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2019 }} \> \`  \small{with Dionissi Aliprantis}   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT New Data on Wealth Mobility and their Impact on Models of Inequality \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2017 }} \> \`  \small{with Nicholas C. Hoffman}   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT Income Inequality Matters, but Mobility is just as Important \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2016 }} \> \`  \small{with Anne Chen}   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT Zero Growth and Long-Run Inequality \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2015 }} \> \`  \small{with Eric R. Young}   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT Why do Economists Still Disagree over Government Spending Multipliers? \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2014 }} \>   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT Time-Consistent Rules in Monetary and Fiscal Policy \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2012 }} \>   \\[0.0cm]
+%
+\> \hskip-.4cm \DOT The Economics of Taxation {\color{lgray} {\small \textit{Forefront \DOT 2012}}} \>   \\[0.0cm]
+%
+\> \hskip-.4cm  \DOT Reducing the Federal Deficit: Approaches in Some Other Countries \thispagestyle{empty} {\footnotesize
+{\color{lgray} 2011 }} \>   \\[0.0cm]
+%
+\> \hskip-.4cm \DOT Will Mounting US Debt Spark Inflation? \color{lgray} {\small \textit{Forefront \DOT 2011}} \>   \\[0.0cm]
+%
+
+
+
+%\> \hskip-.4cm \DOT The Opioid Epidemic and the Labor Market {\footnotesize {\color{lgray}
+% 2017}} \> \` \small{with Anne Chen} \\[0.0cm]
+%%
+%\> \hskip-.4cm \DOT The Consequences of Exposure to Violence during Early Childhood \thispagestyle{empty}   {\footnotesize {\color{lgray}
+% 2016}} \>  \` \small{with Anne Chen} \\[0.0cm]
+%%
+%\> \hskip-.4cm \DOT Neighborhood Poverty and Quality in the Moving to Opportunity Experiment  {\footnotesize {\color{lgray}  2015}}
+%\> \` \small{w D Kolliner} \\[0.0cm]
+%\> \hskip-.4cm \DOT Which Poor Neighborhoods Experienced Income Growth in Recent Decades?
+% \>   \`  \small{w K Fee and N Oliver} \\[0.0cm]
+%%
+%\> \hskip-.4cm \DOT The Concentration of Poverty within Metropolitan Areas
+%{\footnotesize {\color{lgray} 2013}} \>  \`  \small{with K Fee and N Oliver}
+% \\[0.0cm]
+%%
+%\> \hskip-.4cm \DOT Concentrated Poverty {\footnotesize {\color{lgray} 2011}} \> \`  \small{with Mary Zenker}  \\[0.0cm]
+%
+%\> \hskip-.4cm \DOT The Growing Difference in College Attainment between Women and Men \>
+%\` \small{w T Dunne and K Fee} \\[0.75cm]
+%
+%
+%
+%\Large{\textbf{Books}} \> \> \`  \\[0.2cm]
+%%
+%\> \hskip-.4cm \DOT Math as Flexibility of Mind:  Volume I  \> \` {\small Grades 7-12 Standard Textbook}   \\
+%\> \hskip-.4cm \DOT Math as Flexibility of Mind:  Volume II (In Progress)  \> \` {\small Grades 7-12 Recreational Textbook}   \\[0.75cm]
+%%
+%
+%
+\Large{\textbf{Seminars, Conferences, and Speaking}} \> \> \`  \\[0.2cm]
+\> 2024 \DOT System Conference of Equitable Growth (NY Fed)\\
+\> 2023 \DOT ASSA Meetings \DOT LAEF (UC Santa Barbara) \\
+\> 2022 \DOT Midwest Macro Conference \DOT Dallas Fed \\
+\>2021 \DOT UVA \\
+\> 2020 \DOT  Virtual Macro Seminar (VMACS) \\
+\> 2019 \DOT Atlanta Fed (Joint Central Bankers Conference) 
+              \DOT CMU (Carnegie-Rochester-NYU Public Policy Conference)  \\
+\> \hskip1.35cm  FedTalk on the Racial Wealth Gap \DOT Cleveland Fed (System International Econ Meeting) \DOT \\
+\> \hskip1.35cm  U of Washington (NAMES) \DOT  \\
+\> \hskip-.2cm Earlier \DOT
+U of Chicage (ICE) \DOT %2010
+CEF \DOT
+Cleveland State U \DOT
+Fed System Macro Meeting   \DOT
+\> \\[0.0cm]
+\> \hskip1.35cm
+Florida State U \DOT
+KY-CLE Fed Workshop    \DOT
+LAEF (UC Santa Barbara)   \DOT
+LAESM \DOT \\
+\> \hskip1.35cm Midwest Macro Conference \DOT
+Queen's U \DOT
+Southern Economics Association \DOT \\
+\> \hskip1.35cm
+Stony Brook (Wrkshp on Political Econ) \DOT
+Summer EES  \DOT
+UVA   \DOT
+Vienna Macro Wrkshp \DOT \\
+\> \hskip1.35cm Wrkshp in Honor of Stephen J. Turnovsky   \\
+\> \\[0.2cm]
+%
+%
+% \Large{\textbf{Research Affiliations and Visits}} \> \> \`  \\[0.2cm]
+%   \> Opportunity \& Inclusive Growth Institute (OIGI) at the MN Fed \DOT
+% System Affiliate {\color{lgray} \DOT {\footnotesize Feb 2020--}} \>    \\
+% \> Human Capital and Economic Opportunity (HCEO) Network \DOT
+% %\href{https://hceconomics.uchicago.edu/networks/mip}{
+%  Member {\color{lgray} \DOT {\footnotesize Nov 2019--}} \>    \\
+% \> Columbia University  \DOT \href{https://econ.columbia.edu/per/programs/per-weekly-visitors/}{PER Weekly Visitor}
+%                                    {\color{lgray} \DOT {\footnotesize Feb 2019}} \> \\[0.0cm]
+%\> GATE/University of Lyon  \DOT  Associate Researcher
+%                                    {\color{lgray} \DOT {\footnotesize Jun 2018--May 2019}} \> \\[0.0cm]
+%\>  Aix-Marseille School of Economics \DOT Visiting Researcher                                  {\color{lgray} \DOT {\footnotesize Apr 2013}} \> \\
+%\> INURED Haiti \DOT Scientific Board {\color{lgray} \DOT {\footnotesize Jun 2010--}} \> \\[0.5cm]
+%%
+%%
+%
+\Large{\textbf{Refereeing}} \> \thispagestyle{empty} \> \`  \\[0.2cm]
+\>
+\textit{AER:Insights}  $\hskip.1cm \cdot \hskip.1cm$
+\textit{Canadian Journal of Economics}  $\hskip.1cm \cdot \hskip.1cm$
+\textit{Economic Letters}  $\hskip.1cm \cdot \hskip.1cm$
+\textit{Journal of Economic Dynamics and Controls}  $\hskip.1cm \cdot \hskip.1cm$ 
+\> \\
+\>
+\textit{Journal of International Economics}  $\hskip.1cm \cdot \hskip.1cm$ 
+\textit{Journal of Macroeconomics}                                 $\hskip.1cm \cdot \hskip.1cm$
+\textit{Journal of Public Economics}                              $\hskip.1cm \cdot \hskip.1cm$
+\> \\
+\>
+\textit{Macroeconomic Dynamics}$\hskip.1cm \cdot \hskip.1cm$ 
+\textit{Scandanavian Journal of Economics}     $\hskip.1cm \cdot \hskip.1cm$     \> \\[0.5cm]
+%\textit{Urban Studies}  \> \\[0.5cm]
+%
+%
+%
+%
+%
+\Large{\textbf{Teaching Experience}} \> \> \`  \\[0.2cm]
+\>  Instructor (University of Virginia) {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+{\footnotesize
+    {\color{lgray} Spring 2013}
+} \> \\
+\> \hskip1.0cm Macroeconomics II (First Year PhD Sequence) {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}  \> \\
+%\> \> \\
+\> Adjunct Professor (Case Western Reserve University, Weatherhead School of Management) {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+    {\footnotesize  {\color{lgray} Summer 2010, Fall 2011}}  \> \\
+\> \hskip1.0cm Economics for Management \> \\
+%\> \> \\
+\>  Instructor (University of Virginia) {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+    {\footnotesize  {\color{lgray} Spring Terms 2007--2009}}\> \\
+%\> \> \\
+\>  Teaching Assistant (University of Virginia) {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+{\footnotesize
+    {\color{lgray} Fall 2005--Spring 2006}} \> \\
+\>  \hskip1.0cm Intermediate Macroeconomics  \> \\
+\>  \hskip1.0cm Money and Banking  \> \\
+\>  \hskip1.0cm Principles of Macroeconomics  \> \\
+
+%\Large{\textbf{Professional Service}} \> \> \`  \\[0.2cm]
+%%\underline{\textbf{\large{P}}\textbf{\normalsize{ROFESSIONAL}} \textbf{\large{S}}\textbf{\normalsize{ERVICE}}} \> \> \\
+%\> \changeurlcolor{black}\href{http://socfcleveland.org/}{Sisters of Charity Foundation of Cleveland} \DOT Board Member {\color{lgray} \DOT {\footnotesize Sep 2013--Jun 2018} \DOT   {\footnotesize May 2019--} } \> \\
+% \> \hskip1.0cm Member \DOT Subcommittee on  \changeurlcolor{black}\href{http://www.clevelandpromiseneighborhood.org/}{The Promise Neighborhood Initiative} \> \\
+%  \> \href{https://www.journals.elsevier.com/early-childhood-research-quarterly/}{Early Childhood Research Quarterly} \DOT Editorial Board Member {\color{lgray} \DOT {\footnotesize Feb 2018--Apr 2020}} \> \\[0.0cm]
+%  \>   HCEO Conference on Sorting and Segregation \DOT Co-Organizer \DOT {\footnotesize  {\color{lgray} 2021}} \> \\[0.0cm]
+%\>   LAEF Conference on Spatial and Social Inequality (Postponed) \DOT Co-Organizer \DOT {\footnotesize  {\color{lgray} 2020}} \> \\[0.0cm]
+% \> U of Kentucky-Cleveland Fed Workshops  \DOT Co-Organizer \DOT {\color{lgray} {\footnotesize 2018 \DOT 2017 \DOT 2016 \DOT 2015 \DOT 2014 }}   \> \\
+% \>
+% Cleveland Fed Policy Summit Planning Committee
+% {\footnotesize
+%  {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+% \changeurlcolor{lgray}\href{https://www.clevelandfed.org/newsroom-and-events/events/2015/policy-summit/policy-summit-agenda.aspx}{2015}
+%   {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+%   %\href{http://www.clevelandfed.org/Community_Development/events/PS2012/agenda.cfm?DCS.nav=Local}{
+%\changeurlcolor{lgray}\href{https://www.clevelandfed.org/newsroom-and-events/events/2012/2012-federal-reserve-bank-of-cleveland-policy-summit-on-housing-human-capital-and-inequality.aspx}{2012}
+%  {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+%%\href{http://www.clevelandfed.org/community_development/events/ps2011/agenda.cfm?DCS.nav=Local}{
+%\changeurlcolor{lgray}\href{https://www.clevelandfed.org/newsroom-and-events/events/2011/2011-policy-summit-housing-human-capital-and-inequality.aspx}{2011}
+%} \> \\
+%  \>  Cleveland Fed Micro Recruiting Committee
+%   {\footnotesize {\color{lgray}
+%    {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$} 2021 \DOT
+%    2015   {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$} 2014   {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$} 2012}} \>\\
+%\> The Math Corps \DOT Co-Founder and Associate Director \DOT Cleveland Site  {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$ {\footnotesize 2011--2017}} \> \\
+%%\>  \changeurlcolor{black}\href{http://www.inured.org/}{INURED}, Research Associate {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+%%    {\footnotesize  {\color{lgray} 2010--}} \> \\
+%%\>  \changeurlcolor{black}\href{http://www.inured.org/}{INURED}, Chair, Research Working Group {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+%%    {\footnotesize  {\color{lgray} 2011}} \> \\
+%\> Timmy Global Health \DOT Co-Founder and Board Member \DOT Indiana University Chapter {\color{lgray} $\hskip.1cm  {\footnotesize \cdot} \hskip.1cm$}
+%    {\footnotesize  {\color{lgray} 2001--2004}} \> \\[-0.1cm]
+\thispagestyle{empty}
+\end{tabbing}
+
+
+}
+%\vfill
+
+%
+%\hfill \today
+
+\end{document}
+
+
