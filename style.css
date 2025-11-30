@@ -85,3 +85,62 @@ h2 {
 ul {
   line-height: 1.7;
 }
+
+/* -----------------------------------------------------
+   MOBILE RESPONSIVE ADJUSTMENTS
+   ----------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  /* Make nav wrap on small screens */
+  nav {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  /* Reduce padding so content isn't squeezed */
+  .container {
+    padding: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  /* Stack the image over the text */
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-text {
+    max-width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  img.headshot {
+    max-width: 160px;
+  }
+
+  .small-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Slightly smaller mobile phones */
+  .container {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .home-text {
+    font-size: 1rem;
+  }
+
+  img.headshot {
+    max-width: 140px;
+  }
+}
